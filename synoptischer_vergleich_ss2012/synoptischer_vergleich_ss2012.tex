@@ -1,0 +1,62 @@
+\RequirePackage{ifvtex}
+\documentclass[12pt,2headlines,a4paper,oneside,bibtotoc]{scrartcl}
+
+\usepackage{ngerman}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\usepackage[left=40mm,top=25mm,right=30mm,bottom=35mm,nohead,nofoot]{geometry}
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+\usepackage{scrpage2}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{float}
+
+\usetikzlibrary{shapes,arrows}
+
+\pagestyle{scrheadings}
+\ohead{Martin Spoo}
+\ifoot{Synoptischer Vergleich von Mk\,15,38-41,\,Mt\,27,51-56 und Lk\,23,45-49}
+\cfoot{}
+\ofoot{\pagemark}
+\setheadsepline{0.4pt}
+\setfootsepline{0.4pt}
+\addtolength{\headsep}{10mm}
+\addtolength{\footskip}{10mm}
+\setlength{\headheight}{1.1\baselineskip}
+
+%\bibliographystyle{plainde}
+
+\renewcommand{\figurename}{Abb.}
+
+\begin{document}
+
+%% Titelseite
+\thispagestyle{empty}
+\input{title}
+
+\newpage
+
+%% Seitenzähler nach dem Titelblatt auf 1 setzen
+\setcounter{page}{1}
+
+%% Inhaltsverzeichnis
+\tableofcontents
+\newpage
+
+%% Zeilenabstand auf 1,5fach
+\onehalfspacing
+
+%% Einleitung
+\input{introduction}
+\newpage
+
+\newpage
+%%\bibliography{sed_diktatur}
+
+\newpage
+\input{declaration}
+
+\end{document}
+
