@@ -2,7 +2,7 @@ LATEX=latex
 PDFLATEX=pdflatex
 BIBTEX=bibtex
 TARGET=synoptischer_vergleich_ss2012
-TEXSRC=$(TARGET).tex declaration.tex introduction.tex title.tex
+TEXSRC=$(TARGET).tex declaration.tex evaluation.tex introduction.tex synopsis.tex title.tex
 PICTURES=
 BIBSRC=
 

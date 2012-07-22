@@ -12,10 +12,14 @@
 \usepackage{tikz}
 \usepackage{hyperref}
 \usepackage{float}
+\usepackage{longtable}
+
+\setcounter{LTchunksize}{100}
 
 \usetikzlibrary{shapes,arrows}
 
 \pagestyle{scrheadings}
+\ihead{\headmark}
 \ohead{Martin Spoo}
 \ifoot{Synoptischer Vergleich von Mk\,15,38-41,\,Mt\,27,51-56 und Lk\,23,45-49}
 \cfoot{}
@@ -50,6 +54,13 @@
 
 %% Einleitung
 \input{introduction}
+\newpage
+
+%% Synopse
+\input{synopsis}
+
+%% Auswertung
+\input{evaluation}
 \newpage
 
 \newpage
