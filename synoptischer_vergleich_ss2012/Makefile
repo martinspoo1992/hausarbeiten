@@ -4,7 +4,7 @@ BIBTEX=bibtex
 TARGET=synoptischer_vergleich_ss2012
 TEXSRC=$(TARGET).tex declaration.tex evaluation.tex introduction.tex synopsis.tex title.tex
 PICTURES=
-BIBSRC=
+BIBSRC=$(TARGET).bib
 
 .PHONY:	all clean pdf dvi
 
@@ -18,14 +18,14 @@ dvi:	$(TARGET).dvi
 
 pdf:	$(TARGET).pdf
 
-$(TARGET).pdf:	$(TARGET).dvi $(PICTURES:.eps=.pdf)
+$(TARGET).pdf:	$(TEXSRC) $(BIBSRC) $(PICTURES:.eps=.pdf)
 	$(PDFLATEX) $(TARGET)
-#	$(BIBTEX) $(TARGET)
+	$(BIBTEX) $(TARGET)
 	$(PDFLATEX) $(TARGET).tex
 	$(PDFLATEX) $(TARGET).tex
 
 $(TARGET).dvi:	$(TEXSRC) $(BIBSRC) $(PICTURES)
 	$(LATEX) $(TARGET).tex
-#	$(BIBTEX) $(TARGET)
+	$(BIBTEX) $(TARGET)
 	$(LATEX) $(TARGET).tex
 	$(LATEX) $(TARGET).tex
