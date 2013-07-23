@@ -1,8 +1,8 @@
 LATEX=latex
 PDFLATEX=pdflatex
 BIBTEX=bibtex
-TARGET=synoptischer_vergleich_ss2012
-TEXSRC=$(TARGET).tex declaration.tex evaluation.tex introduction.tex synopsis.tex title.tex
+TARGET=holocaust
+TEXSRC=$(TARGET).tex declaration.tex introduction.tex reflection.tex title.tex unterrichtsthema.tex
 PICTURES=
 BIBSRC=$(TARGET).bib
 
