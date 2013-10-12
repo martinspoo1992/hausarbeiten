@@ -2,7 +2,7 @@ LATEX=latex
 PDFLATEX=pdflatex
 BIBTEX=bibtex
 TARGET=harry_potter
-TEXSRC=$(TARGET).tex declaration.tex introduction.tex title.tex racism.tex parallels.tex
+TEXSRC=$(TARGET).tex declaration.tex definitions.tex introduction.tex parallels.tex racism.tex title.tex
 PICTURES=
 BIBSRC=$(TARGET).bib
 
