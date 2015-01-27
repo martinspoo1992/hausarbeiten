@@ -2,7 +2,7 @@ LATEX=latex
 PDFLATEX=pdflatex
 BIBTEX=bibtex
 TARGET=bachelor_thesis
-TEXSRC=$(TARGET).tex credits.tex declaration.tex fan_chants.tex football_fan.tex introduction.tex linguistic_behaviour.tex relation_violence.tex summary.tex title.tex why_alemannia.tex
+TEXSRC=$(TARGET).tex analysis.tex credits.tex declaration.tex fan_chants.tex football_fan.tex introduction.tex linguistic_behaviour.tex relation_violence.tex summary.tex title.tex why_alemannia.tex
 PICTURES=
 BIBSRC=$(TARGET).bib
 
