@@ -22,6 +22,7 @@
 *.snm
 *.synctex.gz
 *.toc
+*.tps
 *.vrb
 *.maf
 *.mtc
