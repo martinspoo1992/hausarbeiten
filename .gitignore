@@ -19,7 +19,8 @@
 *.out
 *.pdfsync
 *.ps
-*.snm
+*.snm 
+*.synctex
 *.synctex.gz
 *.toc
 *.tps
