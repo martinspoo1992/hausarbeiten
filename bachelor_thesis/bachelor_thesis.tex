@@ -1,5 +1,5 @@
 \RequirePackage{ifvtex}
-\documentclass[12pt,2headlines,a4paper,twoside,bibliography=totoc]{scrartcl}
+\documentclass[12pt,2headlines,a4paper,oneside,bibliography=totoc]{scrartcl}
 
 \usepackage{ngerman}
 \usepackage[utf8]{inputenc}
@@ -43,11 +43,9 @@
 %% Titelseite
 \thispagestyle{empty}
 \input{title}
-\thispagestyle{empty}
-\cleardoublepage
 
 %% Eine leere Seite nach dem Titelblatt einfügen
-\cleardoublepage
+\newpage
 
 %% Seitenzähler nach dem Titelblatt auf 1 setzen
 \setcounter{page}{1}
