@@ -1,5 +1,5 @@
 \RequirePackage{ifvtex}
-\documentclass[12pt,2headlines,a4paper,oneside,bibliography=totoc]{scrartcl}
+\documentclass[12pt,headlines=2,footlines=2,a4paper,oneside,bibliography=totoc]{scrartcl}
 
 \usepackage{ngerman}
 \usepackage[utf8]{inputenc}
@@ -7,7 +7,7 @@
 \usepackage{setspace}
 \usepackage[left=25mm,top=25mm,right=40mm,bottom=40mm,nohead,nofoot]{geometry}
 \usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
-\usepackage{scrpage2}
+\usepackage[headsepline,footsepline]{scrpage2}
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{hyperref}
@@ -25,14 +25,16 @@
 \pagestyle{scrheadings}
 \ihead{\headmark}
 \ohead{Martin Spoo}
-\ifoot{Fußballfangesänge – Pejorative Sprachhandlungen von Fußballfans}
+\ifoot{Philosophische Vorstellungen von Kindern zum Thema \glqq Glück\grqq{} in der Grundschule am Beispiel der Grundschule Kesselheim}
 \cfoot{}
 \ofoot{\pagemark}
-\setheadsepline{0.4pt}
-\setfootsepline{0.4pt}
-\addtolength{\headsep}{10mm}
-\addtolength{\footskip}{10mm}
+\addtolength{\headsep}{5mm}
+\addtolength{\footskip}{5mm}
 \setlength{\headheight}{1.1\baselineskip}
+\setlength{\footheight}{1.5\baselineskip}
+
+
+
 
 %\bibliographystyle{plainde}
 
@@ -62,33 +64,27 @@
 \input{introduction}
 \newpage
 
-%% Alemannia Aachen - ein besonderer Fußballverein?
-%\input{why_alemannia}
-%\newpage
+%% Philosophieren in der Grundschule
+\input{philosophy_primary}
+\newpage
 
-%% Was unterscheidet Fußballfans von Zuschauern?
-%\input{football_fan}
-%\newpage
 
-%% Was sind Fangesänge? - Entstehung und Geschichte
-%\input{fan_chants}
-%\newpage
+%% Was ist Glück? Definition und Entwicklung der Glücksphilosophie
+\input{fortune}
+\newpage
 
-%% Sprachliches Handeln - Was tun wir mit Sprache?
-%\input{linguistic_behaviour}
-%\newpage
+%% Inhaltsanalytische Kriterien und zentrale Fragestellungen der Untersuchung
+\input{criteria}
+\newpage
 
-%% Das Verhältnis von Sprache zu Gewalt
-%\input{relation_violence}
-%\newpage
 
-%% Sprachliche Analyse von Fangesängen
-%\input{analysis}
-%\newpage
+%% Analyse des Gesprächs mit Grundschulkindern der Klasse 4 an der Grundschule Kesselheim
+\input{analysis}
+\newpage
 
-%% Resümee
-%\input{summary}
-%\newpage
+%% Ergebnisse und Ausblick
+\input{results}
+\newpage
 
 
 \appendix
@@ -97,9 +93,6 @@
 %\input{transcripts}
 %\newpage
 
-%% Danksagungen
-\input{credits}
-\newpage
 
 \clearpage
 \bibliography{master_thesis}
