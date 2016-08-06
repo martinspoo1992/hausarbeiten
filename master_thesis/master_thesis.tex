@@ -1,13 +1,13 @@
 \RequirePackage{ifvtex}
-\documentclass[12pt,headlines=2,footlines=2,a4paper,oneside,bibliography=totoc]{scrartcl}
+\documentclass[12pt,headlines=2,footlines=2,a4paper,twoside,bibliography=totoc]{scrartcl}
 
 \usepackage{ngerman}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{setspace}
-\usepackage[left=25mm,top=25mm,right=40mm,bottom=40mm,nohead,nofoot]{geometry}
+\usepackage[inner=25mm,outer=40mm,top=25mm,bottom=35mm]{geometry}
 \usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
-\usepackage[headsepline,footsepline]{scrpage2}
+\usepackage[headsepline,footsepline]{scrlayer-scrpage}
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{hyperref}
@@ -28,13 +28,8 @@
 \ifoot{Philosophische Vorstellungen von Kindern zum Thema \glqq Glück\grqq{} in der Grundschule am Beispiel der Grundschule Kesselheim}
 \cfoot{}
 \ofoot{\pagemark}
-\addtolength{\headsep}{5mm}
-\addtolength{\footskip}{5mm}
-\setlength{\headheight}{1.1\baselineskip}
-\setlength{\footheight}{1.5\baselineskip}
-
-
-
+\addtolength{\headsep}{0mm}
+\addtolength{\footskip}{-5mm}
 
 %\bibliographystyle{plainde}
 
