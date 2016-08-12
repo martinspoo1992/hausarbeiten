@@ -20,6 +20,21 @@
 \usepackage{pdfpages}
 \usepackage{url}
 \usepackage{titlesec}
+\usepackage{listings}
+
+\lstset{
+	basicstyle=\footnotesize\ttfamily,
+	numberstyle=\footnotesize\ttfamily,
+	literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ß}{{\ss}}2
+	{ü}{{\"u}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1,
+	numbers=left
+}
 
 \setcounter{LTchunksize}{100}
 
@@ -93,7 +108,9 @@
 \appendix
 
 %% Transkript
-\includepdf[pages={1-6}]{Transkript_Nummern.pdf}
+\input{transcript}
+%\includepdf[pages={1-6}]{Transkript_Nummern.pdf}
+
 \newpage
 
 
