@@ -18,6 +18,8 @@
 \usepackage{dialogue}
 \usepackage{attrib}
 \usepackage{pdfpages}
+\usepackage{url}
+\usepackage{titlesec}
 
 \setcounter{LTchunksize}{100}
 
@@ -32,7 +34,7 @@
 \addtolength{\headsep}{0mm}
 \addtolength{\footskip}{-5mm}
 
-\bibliographystyle{plainde}
+%\bibliographystyle{plainde}
 
 \renewcommand{\figurename}{Abb.}
 
@@ -47,6 +49,11 @@
 
 %% Seitenzähler nach dem Titelblatt auf 1 setzen
 \setcounter{page}{1}
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 %% Inhaltsverzeichnis
 \currentpdfbookmark{Inhaltsverzeichnis}{pdf:toc}
@@ -91,8 +98,8 @@
 
 
 \clearpage
-%\bibliography{master_thesis}
-%\bibliographystyle{dinat}
+\bibliography{master_thesis}
+\bibliographystyle{dinat}
 
 \newpage
 \input{declaration}
