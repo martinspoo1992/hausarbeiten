@@ -28,7 +28,6 @@
 *.maf
 *.mtc
 *.mtc0
-*.pdf
 *~
 *.bak
 .DS_Store
